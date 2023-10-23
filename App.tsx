@@ -1,7 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import { mediaDevices, RTCView } from 'react-native-webrtc';
 
 export default function App() {
+  const test = mediaDevices.getUserMedia({ video: true });
+
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
