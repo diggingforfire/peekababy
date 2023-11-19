@@ -1,13 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { mediaDevices, RTCView } from 'react-native-webrtc';
+import { StyleSheet, View } from 'react-native';
+import BroadcastScreen from './components/broadcast/BroadcastScreen';
 
 export default function App() {
-  const test = mediaDevices.getUserMedia({ video: true });
-
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
+    <View>
+      <BroadcastScreen />
       <StatusBar style="auto" />
     </View>
   );
